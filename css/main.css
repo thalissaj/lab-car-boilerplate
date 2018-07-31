@@ -15,6 +15,9 @@
   display: flex;
   flex-direction: column;
 }
+.register-container-mobile{
+  display: none;
+}
 .register-container h4 {
   color: white;
   margin-left: 30px;
@@ -62,6 +65,9 @@
   height: 1px;
   background-color: white;
   margin-left: 10px;
+}
+.phone-container-mobile{
+  display: none;
 }
 .phone{
   display: grid;
@@ -213,4 +219,104 @@ ol {
 }
 .credencial{
   grid-area: credencial;
+}
+@media screen and (max-width: 576px) {
+  .register {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px 250px 100px;
+  }
+  .register-container{
+    display: none;
+  }
+  .register-container-mobile{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #F7B617;
+    align-items: center;
+  }
+  .logo-white{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn1-mobile{
+    width: 110px;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .phone{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 30px;
+    background-color: #F7B617;
+    padding: 20px;
+  }
+  .phone-container{
+    display: none;
+  }
+  .phone-container-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .contorno-mobile{
+    border: 1px solid white;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  .contorno-mobile img{
+    height: 80%;
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .driver{
+    grid-template-columns: 1fr;
+  }
+  .driver-container{
+    grid-column: 1/2;
+  }
+  .map-conteiner{
+    width: 90%;
+  }
+  .map-container iframe{
+    width: 100%;
+  }
+  .container-footer{
+    display: grid;
+    color: white;
+    grid-template-rows: 60px 2px 150px 150px 2px 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo logo"
+                        "line1 line1"
+                        "li1 icons"
+                        "li1 get-app"
+                        "line2 line2"
+                        "credencial credencial"
+  }
+  .container-footer2{
+    display: none;
+  }
+  .app-link{
+    justify-content: flex-start;
+  }
+  .social-icons{
+    justify-content: flex-start;
+  }
 }
