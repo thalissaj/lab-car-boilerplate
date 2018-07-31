@@ -39,11 +39,11 @@
         <div class="logo-white"><p>Viaje com </p><img src="assets/images/logoBlanco.png" alt="logo"></div>
         <button class="btn btn-light bnt1" type="button" name="button" data-toggle="modal" data-target="#registrate">REGISTRE-SE</button>
         <div class="or-line"><div class="white-line"></div><p>OU</p><div class="white-line"></div></div>
-        <button class="btn btn-light bnt2" type="button" name="button">TORNE-SE UM CONDUTOR</button>
+        <button class="btn btn-light bnt2" type="button" name="button" data-toggle="modal" data-target="#becomeDriver">TORNE-SE UM CONDUTOR</button>
       </div>
       <div class="register-container-mobile">
         <div class="logo-white"><p>Começar a viagem com </p><img src="assets/images/logoBlanco.png" alt="logo"></div>
-        <button class="btn btn-light btn1-mobile" type="button" name="button">Baixar o app</button>
+        <button class="btn btn-light btn1-mobile" type="button" name="button" >Baixar o app</button>
       </div>
     </section>
     <section class="phone">
@@ -230,26 +230,61 @@
               <div class="form-row my-2">
                 <button type="submit" class="btn btn-dark">Sign in</button>
               </div>
-            <div class="modal-footer"></div>
-        </div>
-      </div>
-    </div>
-    <!-- modal three -->
-    <div class="modal fade" id="becomeDriver" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-
-          </div>
-          <div class="modal-body">
-
-          </div>
-          <div class="modal-footer">
-
+              <div class="modal-footer"></div>
           </div>
         </div>
       </div>
     </div>
+  <!-- modal three -->
+  <div class="modal fade" id="becomeDriver" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Torne-se um condutor</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="inputDoors">Seu carro possui 4 portas?</label>
+            <select id="inputDoors" class="custom-select">
+              <option value="1" selected>Não</option>
+              <option value="2">Sim</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="inputMarca">Marca</label>
+            <select id="inputMarca" class="custom-select">
+              <option value="1" selected>Ford</option>
+              <option value="2">Volks</option>
+              <option value="3">Fiat</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="inputYear">Ano</label>
+            <select id="inputYear" class="custom-select">
+              <option value="1" selected>2018</option>
+              <option value="2">2017</option>
+              <option value="3">2016</option>
+              <option value="4">2015</option>
+              <option value="5">2014</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputNumber">Numero de matrícula</label>
+          <input type="text" class="form-control" id="inputNumber" placeholder="Numero">
+        </div>
+        <button type="submit" class="btn btn-dark">Enviar</button>
+    </div>
+  </div>
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
