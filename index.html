@@ -37,7 +37,7 @@
         <h4>Desfrute da Viagem</h4>
         <h4>És dono de seu tempo!</h4>
         <div class="logo-white"><p>Viaje com </p><img src="assets/images/logoBlanco.png" alt="logo"></div>
-        <button class="btn btn-light bnt1" type="button" name="button">REGISTRE-SE</button>
+        <button class="btn btn-light bnt1" type="button" name="button" data-toggle="modal" data-target="#registrate">REGISTRE-SE</button>
         <div class="or-line"><div class="white-line"></div><p>OU</p><div class="white-line"></div></div>
         <button class="btn btn-light bnt2" type="button" name="button">TORNE-SE UM CONDUTOR</button>
       </div>
@@ -169,9 +169,7 @@
               <button type="submit" class="btn btn-dark">Login</button>
             </form>
           </div>
-          <div class="modal-footer">
-
-          </div>
+          <div class="modal-footer"></div>
         </div>
       </div>
     </div>
@@ -180,14 +178,59 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-
+            <h5 class="modal-title">Registre-se</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
           </div>
           <div class="modal-body">
-
-          </div>
-          <div class="modal-footer">
-
-          </div>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Nome">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Sobrenome">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="inputPhones" placeholder="Telefone1">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="inputPhones" placeholder="Telefone2">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="inputPhones" placeholder="Cidade">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="inputPhones" placeholder="Estado">
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="inputState">Como nos conheceu?</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Escolha...</option>
+                  <option>Google</option>
+                  <option>Redes Sociais</option>
+                  <option>Amigos/Parentes</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+              <div class="form-row my-2">
+                <button type="submit" class="btn btn-dark">Sign in</button>
+              </div>
+            <div class="modal-footer"></div>
         </div>
       </div>
     </div>
