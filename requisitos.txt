@@ -1,0 +1,10 @@
+//Bootstrap para fazer o nav bar, grid de 12 e o formulário da tarifas
+
+//menor que 576px, o layout passa para versão mobile
+
+//implementar mapa com o google maps
+
+//inserir os modais: são 3 modais
+1
+2
+3

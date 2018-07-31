@@ -1,1 +1,216 @@
-/* Los estilos de tu proyecto */
+.register {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  background-image: url("../assets/images/taxi.jpg");
+  background-position: bottom;
+  background-size: cover;
+  object-fit: cover;
+  grid-template-rows: 130px 400px 130px;
+}
+.register-container{
+  width: auto;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #F7B617;
+  display: flex;
+  flex-direction: column;
+}
+.register-container h4 {
+  color: white;
+  margin-left: 30px;
+  font-size: 28px;
+}
+.register-container h4:first-child{
+  margin-top: 30px;
+}
+.logo-white{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 20px;
+  align-items: center;
+}
+.logo-white img{
+  margin-left: 10px;
+  object-fit: contain;
+}
+.register-container .bnt1{
+  width: 110px;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+.register-container .bnt2{
+  width: 210px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.or-line{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  margin-top: 30px;
+}
+.or-line p {
+  margin-left: 10px;
+}
+.white-line{
+  width: 45%;
+  height: 1px;
+  background-color: white;
+  margin-left: 10px;
+}
+.phone{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 4fr 2fr 1fr;
+  background-color: #F7B617;
+}
+.phone-container{
+  border: 1px solid white;
+  grid-column: 1/4;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.phone-container img {
+  height: 80%;
+  width: auto;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.text-phone{
+  color: white;
+  width: 40%;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.text-phone h5 {
+  font-size: 30px;
+}
+@media screen and (min-width: 576px) and (max-width: 640px){
+  .phone-container img {
+    width: 50%;
+  }
+}
+.driver{
+  background-image: url("../assets/images/conduce.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 450px;
+}
+.driver-container{
+  grid-column: 2/3;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.driver-container h5{
+  font-size: 32px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.driver-container p {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.driver-container button{
+  background-color: #F7B617;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: white;
+  width: 180px;
+}
+.form {
+  background-color: #F7B617;
+}
+.img-shape1{
+  object-fit: contain;
+}
+.footer{
+  background-color: #2B2B2B;
+  padding: 30px;
+}
+.container-footer{
+  display: grid;
+  color: white;
+  grid-template-rows: 60px 2px 360px 2px 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "logo logo logo logo"
+                      "line1 line1 line1 line1"
+                      "icons li1 li2 get-app"
+                      "line2 line2 line2 line2"
+                      "credencial credencial credencial credencial"
+}
+.container-footer img{
+  grid-area: logo;
+}
+.footer-line1{
+  grid-area: line1;
+  background-color: white;
+  height: 100%;
+}
+.social-icons{
+  grid-area: icons;
+  font-size: 1em;
+  display: flex;
+  align-items: flex-end;
+}
+.social-icons i{
+  margin: 10px;
+}
+.container-footer1{
+  grid-area: li1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container-footer1 ol li{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container-footer2{
+  grid-area: li2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container-footer2 ol li{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ol {
+  list-style: none;
+}
+.app-link{
+  grid-area: get-app;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.app-link img {
+  width: 100%;
+}
+.footer-line2{
+  grid-area: line2;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+.credencial{
+  grid-area: credencial;
+}
